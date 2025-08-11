@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login/Cadastro</title>
+    <style>
+        @import "tailwindcss";
+    </style>
+</head>
+
+<body
+    class="m-0 p-0 bg-[url(https://i.pinimg.com/originals/b9/5a/56/b95a56344112315e9abef8d583e39d20.jpg)] bg-center bg-no-repeat bg-cover bg-fixed h-100dvh font-bold">
+    <section
+        class="flex flex-col bg-[#00000073] justify-center items-center mt-[10rem] ml-[15rem] mr-[15rem] max-md:ml-[2rem] max-md:mr-[2rem] p-[2rem] rounded-2xl shadow-2xl h-50dvh gap-[1.5rem] text-[#e3e3e3]">
+        <h1 class="text-5xl font-['Inter', sans-serif]">Cadastro</h1>
+        <br>
+        <input class="rounded-2xl text-white bg-[#e1e1e17e] p-[1rem] shadow-2xl" type="text"
+            placeholder="Crie um Usuário">
+        <br>
+        <input class="rounded-2xl text-white bg-[#e1e1e17e] p-[1rem] shadow-2xl" type="password"
+            placeholder="Crie uma Senha">
+        <br>
+        <a href="./login.html"><button type="submit" class="bg-[#0f04a8af] p-[1rem] rounded-2xl text-white"
+                onclick="alert('Cadastro concluído!')">Cadastrar</button></a>
+        <br><br>
+        <span>Já é cadastrado? Faça login <a href="./login.html" class="text-orange-500"> AQUI</a></span>
+    </section>
+</body>
+
+</html>

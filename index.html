@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforço - Programação Web</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <a href="#mensagemInicial" class="logoSite">
+            <h2>Sonholândia</h2>
+        </a>
+        <div class="headerLink">
+            <a href="#mensagemInicial">Home</a>
+            <a href="login.html">Cadastrar/Entrar</a>
+            <a href="feedSonhos.html">Sonho</a>
+        </div>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Mensagem inicial -->
+        <section class="mensagemInicial" id="mensagemInicial">
+            <h1>Sonholândia</h1><br>
+            <span>É preciso força pra sonhar e perceber que a estrada vai além do que se vê.</span>
+        </section>
+
+        <!-- Introdução sobte o site -->
+        <section class="intro">
+            <h2>Introdução</h2><br>
+            <p>Este site é um site para você comentar e falar a respeito de sonhos. Sim, dos seus sonhos! Não importa o
+                quão estranho seja esse sonho, adoraríamos ouvir à todos!</p>
+        </section>
+        <!-- Identidade do usuário -->
+        <section class="identidade" id="identidade">
+            <fieldset>
+                <h2>Primeiro: Conte-nos quem é você</h2>
+                <fieldset>
+                    <legend>Não se preocupe! Isso é só entre você e nós.</legend>
+                    <form action="" id="identidade">
+                        <label for="nome" id="nome">Qual o seu nome?</label>
+                        <input type="text" id="nome" name="nome" placeholder="Matheus Castro"><br>
+                        <label for="idade" id="idade">Qual a sua data de nascimento?</label>
+                        <input type="date" name="idade" id="idade"><br>
+                        <label for="idade" id="idade">Qual o seu endereço de email?</label>
+                        <input type="email" name="email" id="email" placeholder="castro.matheus@gmail.com"><br>
+                        <button id="identidade" onclick="">Enviar</button>
+                    </form>
+                </fieldset>
+            </fieldset>
+        </section>
+
+        <!-- Sonhos -->
+        <section class="usuarioSonho" id="usuarioSonho">
+            <fieldset>
+                <h2>Perfeito! Agora conte-nos seu sonho</h2>
+                <legend>Chegou a hora! Desabafe...</legend>
+                <form action="">
+                    <label for="textarea" id="sonhoUsuario">Fale TUDO o que sonhou: </label><br>
+                    <textarea name="sonhoUsuario" id="sonhoUsuario" cols="80" rows="20"
+                        placeholder="Fui teletransportado para um isekai, onde haviam dinossauros. De repente..."></textarea>
+                    <p>Você considera isso como: </p>
+                    <select name="SouP" id="SouP">
+                        <option id="SouP" value="sonho">Sonho</option>
+                        <option id="SouP" value="pesadelo">Pesadelo</option>
+                        <option id="SouP" value="undefined">Não sei/Não quero falar</option>
+                    </select><br>
+                    <p>Você permite que outras pessoas vejam seu sonho?</p>
+                    <select name="SouP" id="SouP">
+                        <option id="SouP" value="public">Sim, permito que outros vejam (Público)</option>
+                        <option id="SouP" value="private">Não, apenas eu posso ver (Privado)</option>
+                    </select><br>
+                    <button type="submit">Mandar</button>
+                </form>
+            </fieldset>
+        </section>
+
+        <!-- Feedback -->
+        <details>
+            <summary>Deixe seu Feedback aqui!</summary>
+            <section class="feedback" id="feedback">
+                <fieldset>
+                    <legend>Isso é opcional...</legend>
+                    <form action="">
+                        <p for="">Escolha dentre essas opções qual mais você se indentifica com a experiência
+                            conosco</p>
+                        <div class="optionsFeedback">
+                            <input type="radio" name="happy" id="otimo">
+                            <label for="happy" name="happy" id="otimo">Ótimo</label>
+                            <input type="radio" name="happy" id="mediano">
+                            <label for="soso" name="soso" id="mediano">Mediana</label>
+                            <input type="radio" name="happy" id="ruim">
+                            <label for="worry" name="worry" id="ruim">Ruim</label>
+                        </div><br><br>
+                        <label for="">Deixe um comentário sobre nós:</label><br>
+                        <textarea name="Feedback" id="Feedback" cols="80" rows="10"
+                            placeholder="Achei assim, assado... gostei disso, odiei aquilo..."></textarea><br>
+                        <button type="button" onclick="alert('Obrigado pelo feedback!')">Enviar</button>
+
+                    </form>
+                </fieldset>
+            </section>
+        </details>
+    </main><br>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Se quiser saber mais sobre mim, <a href="./eu.html" target="_blank">Clique aqui.</a></p>
+        <br>
+        <p>Siga-nos nas redes socias!</p>
+        <div class="redesSociais">
+            <a href="https://www.linkedin.com/in/matheuss0197/" target="_blank">Linkedin</a>
+            <a href="https://instagram.com/mpestudante12/" target="_blank">Instagram</a>
+            <a href="https://m.youtube.com/@felisbertronn/" target="_blank">Youtube</a>
+            <a href="https://github.com/Matheus0197M/" target="_blank">GitHub</a>
+        </div>
+        <span>Sonholândia &copy; Todos os direitos reservados</span>
+    </footer>
+</body>
+
+</html>
